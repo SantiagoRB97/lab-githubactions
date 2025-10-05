@@ -18,7 +18,6 @@ jobs:
     uses: ./.github/workflows/deploy-to-s3.yml
     with:
       CI_ENV: staging
-      CONTENTFUL_ENVIRONMENT: 'staging'
     secrets:
       AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID_DEV }}
       AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY_DEV }}
